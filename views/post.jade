@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  if json
+    h1 #{content.title}
+    div #{content.body}
+  else
+    div!= content
